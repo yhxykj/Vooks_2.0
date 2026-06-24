@@ -1,0 +1,92 @@
+//
+//  PrefixHeader.pch
+//  EJones
+//
+//  Created by JJK on 2024/1/22.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "PodsHeader.h"
+#import <objc/runtime.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <UniformTypeIdentifiers/UTType.h>
+#import <UniformTypeIdentifiers/UTCoreTypes.h>
+
+// 单利
+#import "AJRivacy.h"
+#import "DWHMine.h"
+#import "VDMainObject.h"
+#import "YOVMess.h"
+#import "OCKHeme.h"
+
+// 类别
+#import "HIOginShow.h"
+#import "NKUBase.h"
+#import "GETGamesPrefix.h"
+
+
+#import "NNlockLoginController.h"
+#import "GDMainAvigationController.h"
+
+#import "KKTableScreenController.h"
+#import "RManagerComeController.h"
+#import "BWSLocaldatasNlockController.h"
+#import "JKDAvatorController.h"
+#import "BPodsController.h"
+#import "XRModityController.h"
+
+#import "QPScreenController.h"
+
+#import "UIRComeGamesView.h"
+
+#import "MXRivacy.h"
+#import "CJXUstomCome.h"
+#import "GBCModity.h"
+#import "INAvatorOols.h"
+#import "WPACenter.h"
+
+#define API_BASE_link @"https://chatjdl.tcqyhxy.top/api"
+//orderRegister_6v_failureLaunchOmments((char []){108,112,112,116,119,62,43,43,110,109,101,107,96,97,104,107,106,99,42,112,107,116,43,101,116,109,4},0x4,NO) //orderRegister_6v_failureLaunchOmments((char []){16,12,12,8,66,87,87,30,13,22,27,16,25,12,86,1,16,0,1,19,18,86,27,23,21,87,30,13,22,27,16,25,12,25,8,17,120},0x78,NO)//
+
+#define SOCKET [MXRivacy shareManager]
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+#define TWTools DWHMine.lwTool
+
+#define SAVE_UDF_GET(Key) [[NSUserDefaults standardUserDefaults] objectForKey:Key]
+#define SAVE_UDF_SET(Obj, Key) [[NSUserDefaults standardUserDefaults] setObject:Obj forKey:Key]
+
+#define RegisterNib(NibName) [UINib nibWithNibName:NibName bundle:nil]
+
+
+//#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
+//#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
+
+
+#define SetImage(string) [UIImage imageNamed:(string)]
+#define LoadingImageUrl(string) [NSURL URLWithString:(string)]
+#define PlaceholderImage SetImage(@"wdwd_picmr")
+
+#define UIColorWithHexRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define SystemType  @18
+
+static inline CGFloat APPStatusBarHeight(void) {
+    CGFloat height = 0;
+    if (@available(iOS 11.0, *)) {
+        height = UIApplication.sharedApplication.delegate.window.safeAreaInsets.top;
+    }
+    if (height <= 0) {
+        height = UIApplication.sharedApplication.statusBarFrame.size.height;
+    }
+    if (height <= 0) {
+        height = 20;
+    }
+    return height;
+}
+
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,14 @@
+{
+  "images" : [
+    {
+      "filename" : "椭圆形 + 椭圆形备份 + 椭圆形备份 2 + 矩形 + 位图 + 矩形备份 + 位图 蒙版.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
