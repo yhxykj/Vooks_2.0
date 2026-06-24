@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PNGCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZG2-st-tnd">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nq0-T7-3uh">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyG-20-ZU8">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preferredPpclose" translatesAutoresizingMaskIntoConstraints="NO" id="heN-kI-SzO">
+                                <rect key="frame" x="55.666666666666657" y="41" width="39" height="52"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coverUpload" translatesAutoresizingMaskIntoConstraints="NO" id="pXC-JS-OiZ">
+                                <rect key="frame" x="32" y="119" width="86" height="34"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eyG-20-ZU8" secondAttribute="trailing" id="F8M-K1-czX"/>
+                            <constraint firstAttribute="bottom" secondItem="eyG-20-ZU8" secondAttribute="bottom" id="QJe-Ad-lHf"/>
+                            <constraint firstItem="pXC-JS-OiZ" firstAttribute="top" secondItem="heN-kI-SzO" secondAttribute="bottom" constant="26.050000000000001" id="W39-7b-CMs"/>
+                            <constraint firstItem="pXC-JS-OiZ" firstAttribute="centerX" secondItem="nq0-T7-3uh" secondAttribute="centerX" id="XpR-wm-Ty9"/>
+                            <constraint firstItem="eyG-20-ZU8" firstAttribute="leading" secondItem="nq0-T7-3uh" secondAttribute="leading" id="giT-4d-Odl"/>
+                            <constraint firstItem="eyG-20-ZU8" firstAttribute="top" secondItem="nq0-T7-3uh" secondAttribute="top" id="mR0-Ha-AhR"/>
+                            <constraint firstItem="heN-kI-SzO" firstAttribute="centerX" secondItem="nq0-T7-3uh" secondAttribute="centerX" id="x6p-nf-Uy8"/>
+                            <constraint firstItem="heN-kI-SzO" firstAttribute="top" secondItem="nq0-T7-3uh" secondAttribute="top" constant="40.969999999999999" id="zCw-tB-PPC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="ZG2-st-tnd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1YL-TB-YnF"/>
+                <constraint firstItem="nq0-T7-3uh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6mb-KP-Pje"/>
+                <constraint firstItem="nq0-T7-3uh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bCl-nv-ebn"/>
+                <constraint firstAttribute="trailing" secondItem="nq0-T7-3uh" secondAttribute="trailing" id="fzx-wl-vTF"/>
+                <constraint firstAttribute="trailing" secondItem="ZG2-st-tnd" secondAttribute="trailing" id="jwJ-IH-YhQ"/>
+                <constraint firstItem="ZG2-st-tnd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jzk-zu-Iwk"/>
+                <constraint firstAttribute="bottom" secondItem="ZG2-st-tnd" secondAttribute="bottom" id="mwQ-I5-c7c"/>
+                <constraint firstAttribute="bottom" secondItem="nq0-T7-3uh" secondAttribute="bottom" id="y7Y-tX-0Eu"/>
+            </constraints>
+            <connections>
+                <outlet property="bgImageView" destination="ZG2-st-tnd" id="7xf-7C-HEt"/>
+                <outlet property="bgView" destination="eyG-20-ZU8" id="NQM-sx-Gy1"/>
+                <outlet property="bigView" destination="nq0-T7-3uh" id="Jcc-Tl-y4c"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="coverUpload" width="86" height="34"/>
+        <image name="preferredPpclose" width="39" height="52"/>
+    </resources>
+</document>

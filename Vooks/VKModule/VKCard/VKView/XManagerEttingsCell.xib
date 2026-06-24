@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XManagerEttingsCell">
+            <rect key="frame" x="0.0" y="0.0" width="264" height="324"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="264" height="324"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FZu-zO-iGs">
+                        <rect key="frame" x="0.0" y="0.0" width="264" height="324"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WaT-CP-j1m">
+                        <rect key="frame" x="0.0" y="0.0" width="264" height="324"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiH-1x-Xtc">
+                                <rect key="frame" x="0.0" y="0.0" width="264" height="324"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videochatCurrent" translatesAutoresizingMaskIntoConstraints="NO" id="vV8-xf-20j">
+                                <rect key="frame" x="112.66666666666669" y="61" width="39" height="52"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unlockimages" translatesAutoresizingMaskIntoConstraints="NO" id="gci-Oe-oAu">
+                                <rect key="frame" x="89" y="139" width="86" height="34"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MiH-1x-Xtc" secondAttribute="trailing" id="07U-z9-rJL"/>
+                            <constraint firstItem="vV8-xf-20j" firstAttribute="top" secondItem="WaT-CP-j1m" secondAttribute="top" constant="61" id="LdO-vf-VZ0"/>
+                            <constraint firstAttribute="bottom" secondItem="MiH-1x-Xtc" secondAttribute="bottom" id="VfT-kd-SyK"/>
+                            <constraint firstItem="MiH-1x-Xtc" firstAttribute="top" secondItem="WaT-CP-j1m" secondAttribute="top" id="Vsg-nt-ets"/>
+                            <constraint firstItem="gci-Oe-oAu" firstAttribute="centerX" secondItem="WaT-CP-j1m" secondAttribute="centerX" id="XZm-rn-KyP"/>
+                            <constraint firstItem="MiH-1x-Xtc" firstAttribute="leading" secondItem="WaT-CP-j1m" secondAttribute="leading" id="h6G-sP-5aH"/>
+                            <constraint firstItem="vV8-xf-20j" firstAttribute="centerX" secondItem="WaT-CP-j1m" secondAttribute="centerX" id="js7-w7-mcA"/>
+                            <constraint firstItem="gci-Oe-oAu" firstAttribute="top" secondItem="vV8-xf-20j" secondAttribute="bottom" constant="26" id="rWk-88-baQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="WaT-CP-j1m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Dyv-W1-xnX"/>
+                <constraint firstAttribute="bottom" secondItem="WaT-CP-j1m" secondAttribute="bottom" id="Fzo-FV-stC"/>
+                <constraint firstAttribute="trailing" secondItem="FZu-zO-iGs" secondAttribute="trailing" id="Ihd-Hv-Yuc"/>
+                <constraint firstItem="FZu-zO-iGs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KPF-2D-XI4"/>
+                <constraint firstAttribute="bottom" secondItem="FZu-zO-iGs" secondAttribute="bottom" id="TYD-b2-DG3"/>
+                <constraint firstItem="FZu-zO-iGs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zm3-bV-aEW"/>
+                <constraint firstItem="WaT-CP-j1m" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zxe-DG-4X1"/>
+                <constraint firstAttribute="trailing" secondItem="WaT-CP-j1m" secondAttribute="trailing" id="p4q-zF-e4L"/>
+            </constraints>
+            <size key="customSize" width="264" height="324"/>
+            <connections>
+                <outlet property="bgImageView" destination="FZu-zO-iGs" id="VG9-do-cFR"/>
+                <outlet property="bgView" destination="MiH-1x-Xtc" id="jMb-dg-fvM"/>
+                <outlet property="bigView" destination="WaT-CP-j1m" id="ED9-4O-Phh"/>
+            </connections>
+            <point key="canvasLocation" x="287.02290076335879" y="83.098591549295776"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="videochatCurrent" width="39" height="52"/>
+        <image name="unlockimages" width="86" height="34"/>
+    </resources>
+</document>

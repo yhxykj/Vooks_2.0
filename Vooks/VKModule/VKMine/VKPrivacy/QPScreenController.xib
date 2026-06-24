@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QPScreenController">
+            <connections>
+                <outlet property="lw_webView" destination="Zpo-xJ-Yia" id="MOu-Gq-MQL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zpo-xJ-Yia">
+                    <rect key="frame" x="0.0" y="91" width="390" height="753"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWe-fm-CEf">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GU-ey-81H">
+                            <rect key="frame" x="5" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="Ry4-6Z-d9p"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="delete__wContentlabel"/>
+                            <connections>
+                                <action selector="_back:" destination="-1" eventType="touchUpInside" id="4cq-Mx-C6K"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="5GU-ey-81H" firstAttribute="top" secondItem="NWe-fm-CEf" secondAttribute="top" id="KSi-BV-0fR"/>
+                        <constraint firstAttribute="bottom" secondItem="5GU-ey-81H" secondAttribute="bottom" id="Y8I-LF-PlA"/>
+                        <constraint firstAttribute="height" constant="44" id="cnT-VE-tNK"/>
+                        <constraint firstItem="5GU-ey-81H" firstAttribute="leading" secondItem="NWe-fm-CEf" secondAttribute="leading" constant="5" id="p18-Js-wBG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Zpo-xJ-Yia" secondAttribute="bottom" id="BHn-TJ-khY"/>
+                <constraint firstItem="Zpo-xJ-Yia" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wz5-fA-mcs"/>
+                <constraint firstItem="Zpo-xJ-Yia" firstAttribute="top" secondItem="NWe-fm-CEf" secondAttribute="bottom" id="ZtM-Is-DHc"/>
+                <constraint firstItem="NWe-fm-CEf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="dsd-7R-vxQ"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="NWe-fm-CEf" secondAttribute="trailing" id="hTv-4a-t9V"/>
+                <constraint firstAttribute="trailing" secondItem="Zpo-xJ-Yia" secondAttribute="trailing" id="nUU-o3-7BF"/>
+                <constraint firstItem="NWe-fm-CEf" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="vQ7-mc-ayB"/>
+            </constraints>
+            <point key="canvasLocation" x="130.76923076923077" y="-12.085308056872037"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete__wContentlabel" width="12" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

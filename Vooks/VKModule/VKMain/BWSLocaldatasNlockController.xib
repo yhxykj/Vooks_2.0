@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BWSLocaldatasNlockController">
+            <connections>
+                <outlet property="bonkView" destination="P5b-e0-SaP" id="KCk-Yy-U70"/>
+                <outlet property="tableView" destination="rge-6g-Tic" id="lWt-q2-1hT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rge-6g-Tic">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5S7-hy-Dk1"/>
+                        <outlet property="delegate" destination="-1" id="DbR-KM-b9B"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqg-IF-6oQ">
+                    <rect key="frame" x="68.666666666666686" y="728" width="253" height="58"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="authSubsribleFemale"/>
+                    <connections>
+                        <action selector="_enumerateAgreementLaunchSenderLengthWarning:" destination="-1" eventType="touchUpInside" id="3JQ-cy-tZX"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5b-e0-SaP">
+                    <rect key="frame" x="75" y="314.66666666666669" width="240" height="215.00000000000006"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messageUnicode" translatesAutoresizingMaskIntoConstraints="NO" id="ZAg-bQ-DAD">
+                            <rect key="frame" x="29.666666666666671" y="0.0" width="181" height="181"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="181" id="kfn-pj-L4M"/>
+                                <constraint firstAttribute="width" constant="181" id="yYY-2K-fwN"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No AI friends have been created yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0L-u8-fjc">
+                            <rect key="frame" x="2.6666666666666714" y="193" width="235" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="S0L-u8-fjc" firstAttribute="centerX" secondItem="P5b-e0-SaP" secondAttribute="centerX" id="Z21-vD-cZX"/>
+                        <constraint firstItem="ZAg-bQ-DAD" firstAttribute="centerX" secondItem="P5b-e0-SaP" secondAttribute="centerX" id="emG-lF-vyH"/>
+                        <constraint firstItem="ZAg-bQ-DAD" firstAttribute="top" secondItem="P5b-e0-SaP" secondAttribute="top" id="evn-fP-2p4"/>
+                        <constraint firstAttribute="width" constant="240" id="kNr-CD-DVS"/>
+                        <constraint firstAttribute="height" constant="215" id="o7y-50-Gd0"/>
+                        <constraint firstItem="S0L-u8-fjc" firstAttribute="top" secondItem="ZAg-bQ-DAD" secondAttribute="bottom" constant="12" id="qrt-LG-pzb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.027450980390000001" green="0.043137254899999998" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="P5b-e0-SaP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6I5-Tj-8fO"/>
+                <constraint firstItem="rge-6g-Tic" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cbp-h8-Toe"/>
+                <constraint firstAttribute="trailing" secondItem="rge-6g-Tic" secondAttribute="trailing" id="JiU-UZ-fC6"/>
+                <constraint firstItem="P5b-e0-SaP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LUZ-Xj-J68"/>
+                <constraint firstItem="cqg-IF-6oQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LcZ-yw-kKN"/>
+                <constraint firstAttribute="bottom" secondItem="rge-6g-Tic" secondAttribute="bottom" id="VfF-gY-PRg"/>
+                <constraint firstItem="rge-6g-Tic" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tgy-z9-Wjb"/>
+                <constraint firstAttribute="bottom" secondItem="cqg-IF-6oQ" secondAttribute="bottom" constant="58" id="ygQ-nO-QQ3"/>
+            </constraints>
+            <point key="canvasLocation" x="130.76923076923077" y="-12.085308056872037"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="messageUnicode" width="181" height="181"/>
+        <image name="authSubsribleFemale" width="253" height="58"/>
+    </resources>
+</document>

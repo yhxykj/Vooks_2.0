@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="361" id="KGk-i7-Jjw" customClass="URegisterRivacyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="361"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="361"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eLs-0u-u7R">
+                        <rect key="frame" x="16" y="0.0" width="288" height="331"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CO5-A9-Qfv">
+                        <rect key="frame" x="144" y="306" width="32" height="55"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="5df-88-szR"/>
+                            <constraint firstAttribute="height" constant="55" id="Bog-TR-fh5"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYk-io-X4l">
+                        <rect key="frame" x="176" y="247" width="90" height="64"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="insertTabbar"/>
+                        <connections>
+                            <action selector="_borderAlwaysChatTableNavigationTint:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aoh-2u-5VA"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3E0-eB-qEK">
+                        <rect key="frame" x="54" y="247" width="90" height="64"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="typelabelCallPhoto"/>
+                        <connections>
+                            <action selector="_shakeMinimumRowLock:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TCA-pW-vuM"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0M-mr-336">
+                        <rect key="frame" x="129.33333333333334" y="195" width="61.333333333333343" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="ZRr-bz-iId"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eLs-0u-u7R" secondAttribute="bottom" constant="30" id="4Zl-Dn-WKB"/>
+                    <constraint firstAttribute="trailing" secondItem="eLs-0u-u7R" secondAttribute="trailing" constant="16" id="9hw-7R-RNB"/>
+                    <constraint firstItem="eLs-0u-u7R" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HIS-cT-ITQ"/>
+                    <constraint firstItem="e0M-mr-336" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="MAU-0D-rhr"/>
+                    <constraint firstItem="CO5-A9-Qfv" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="dLs-DB-gbW"/>
+                    <constraint firstAttribute="bottom" secondItem="3E0-eB-qEK" secondAttribute="bottom" constant="50" id="fF9-Cj-kwL"/>
+                    <constraint firstAttribute="bottom" secondItem="CO5-A9-Qfv" secondAttribute="bottom" id="npG-Cl-BRT"/>
+                    <constraint firstAttribute="bottom" secondItem="QYk-io-X4l" secondAttribute="bottom" constant="50" id="ogt-Vs-Iq3"/>
+                    <constraint firstItem="CO5-A9-Qfv" firstAttribute="leading" secondItem="3E0-eB-qEK" secondAttribute="trailing" id="rcz-2A-9LV"/>
+                    <constraint firstItem="eLs-0u-u7R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vBg-LV-msI"/>
+                    <constraint firstItem="QYk-io-X4l" firstAttribute="top" secondItem="e0M-mr-336" secondAttribute="bottom" constant="20" id="vVg-PE-JRz"/>
+                    <constraint firstItem="QYk-io-X4l" firstAttribute="leading" secondItem="CO5-A9-Qfv" secondAttribute="trailing" id="woa-Yx-r7d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgImageView" destination="eLs-0u-u7R" id="YtD-Mk-bDG"/>
+                <outlet property="namelabel" destination="e0M-mr-336" id="rr1-vf-mHd"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="98.943661971830991"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="typelabelCallPhoto" width="90" height="64"/>
+        <image name="insertTabbar" width="90" height="64"/>
+    </resources>
+</document>
