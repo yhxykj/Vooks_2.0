@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SJJEditCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="576"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="576"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartNickname" translatesAutoresizingMaskIntoConstraints="NO" id="8Pj-0L-2c4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="576"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GlA-66-HRM">
+                        <rect key="frame" x="203" y="406" width="117" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="52U-Ub-FXJ"/>
+                            <constraint firstAttribute="width" constant="117" id="Ixa-RD-Z55"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="unlockbgCollect"/>
+                        <connections>
+                            <action selector="_refreshingSuccessRelationZeroCommonRegistration:" destination="gTV-IL-0wX" eventType="touchUpInside" id="GuL-uN-uQ3"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <constraints>
+                <constraint firstItem="8Pj-0L-2c4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="61W-JF-8Gj"/>
+                <constraint firstAttribute="bottom" secondItem="GlA-66-HRM" secondAttribute="bottom" constant="40" id="Anw-Si-HIc"/>
+                <constraint firstItem="8Pj-0L-2c4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KrJ-Fl-QUw"/>
+                <constraint firstAttribute="trailing" secondItem="8Pj-0L-2c4" secondAttribute="trailing" id="k8P-AB-deJ"/>
+                <constraint firstAttribute="trailing" secondItem="GlA-66-HRM" secondAttribute="trailing" id="rqZ-Gm-Psm"/>
+                <constraint firstAttribute="bottom" secondItem="8Pj-0L-2c4" secondAttribute="bottom" id="vwF-ai-7hs"/>
+            </constraints>
+            <size key="customSize" width="320" height="576"/>
+            <connections>
+                <outlet property="bgImageView" destination="8Pj-0L-2c4" id="jFx-Xq-hmr"/>
+            </connections>
+            <point key="canvasLocation" x="335.87786259541986" y="171.83098591549296"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="unlockbgCollect" width="117" height="130"/>
+        <image name="heartNickname" width="390" height="844"/>
+    </resources>
+</document>
